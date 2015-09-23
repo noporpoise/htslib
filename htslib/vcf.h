@@ -319,7 +319,7 @@ typedef struct {
     /**
      *  bcf_read() - read next VCF or BCF record
      *
-     *  Returns -1 on critical errors, 0 otherwise. On errors which are not
+     *  Returns -1 on critical errors or EOF, 0 otherwise. On errors which are not
      *  critical for reading, such as missing header definitions, v->errcode is
      *  set to one of BCF_ERR* code and must be checked before calling
      *  vcf_write().
